@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dewan Kerja Ambalan - Organisasi Sekolah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-icon {
+            transition: all 0.2s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="hero-gradient text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="logo_dka.png" alt="Logo Dewan Kerja Ambalan - Siluet kelompok pramuka dengan latar kuning" class="h-12 w-12 rounded-full border-2 border-white">
+                    <h1 class="text-2xl font-bold">Dewan Kerja Ambalan</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#tentang" class="hover:text-indigo-200 transition">Tentang Kami</a>
+                    <a href="#kegiatan" class="hover:text-indigo-200 transition">Kegiatan</a>
+                    <a href="#kontak" class="hover:text-indigo-200 transition">Kontak</a>
+                </nav>
+                <button class="md:hidden text-xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <div class="flex flex-col items-center py-16 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Bergabunglah Dengan Organisasi Kami</h2>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl">Wadah pengembangan diri untuk siswa yang ingin berkembang melalui kegiatan pramuka</p>
+                <a href="#daftar" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-indigo-50 transition pulse-animation">Daftar Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-indigo-600 mb-4">Tentang Dewan Kerja Ambalan</h2>
+                <div class="w-20 h-1 bg-indigo-400 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="dka 1.jpg" alt="Kelompok siswa pramuka sedang melakukan kegiatan outdoor dengan seragam lengkap" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Organisasi Pembinaan Anggota Pramuka</h3>
+                    <p class="text-gray-600 mb-4">Dewan Kerja Ambalan adalah organisasi intra sekolah yang bertujuan membina anggota pramuka untuk mengembangkan karakter, kepemimpinan, dan keterampilan melalui berbagai kegiatan menarik.</p>
+                    
+                    <div class="space-y-4 mt-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-indigo-100 p-3 rounded-full">
+                                <i class="fas fa-users text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Komunitas Solid</h4>
+                                <p class="text-gray-600 text-sm">Temukan teman dengan minat yang sama dan bangun jaringan yang bermanfaat.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-indigo-100 p-3 rounded-full">
+                                <i class="fas fa-hiking text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Kegiatan Seru</h4>
+                                <p class="text-gray-600 text-sm">Beragam kegiatan outdoor dan indoor yang menantang dan mendidik.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-indigo-100 p-3 rounded-full">
+                                <i class="fas fa-medal text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Pengembangan Diri</h4>
+                                <p class="text-gray-600 text-sm">Kembangkan berbagai keterampilan dan nilai-nilai kepramukaan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kegiatan Section -->
+    <section id="kegiatan" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-indigo-600 mb-4">Kegiatan Kami</h2>
+                <div class="w-20 h-1 bg-indigo-400 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Berbagai kegiatan menarik yang bisa kamu ikuti bersama kami</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Kegiatan 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="dka_2.jpeg" alt="Siswa pramuka sedang melakukan perkemahan di alam terbuka dengan tenda-tenda berwarna" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Perkemahan</h3>
+                        <p class="text-gray-600 mb-4">Kegiatan kemah reguler setiap bulan untuk melatih kemandirian dan survival skill.</p>
+                        <div class="flex justify-between items-center text-sm text-gray-500">
+                            <span><i class="far fa-calendar mr-1"></i></span>
+                            <span><i class="far fa-clock mr-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kegiatan 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="repling.jpeg" alt="Siswa sedang melakukan simulasi pertolongan pertama dengan peralatan medis sederhana" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Repling</h3>
+                        <p class="text-gray-600 mb-4">Pelatihan teknik repling (rappelling) dengan standar keselamatan tinggi bersama instruktur profesional..</p>
+                        <div class="flex justify-between items-center text-sm text-gray-500">
+                            <span><i class="far fa-calendar mr-1"></i></span>
+                            <span><i class="far fa-clock mr-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kegiatan 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="wks_jaya.jpg" alt="Kelompok siswa sedang melakukan tusuk templok di sekitar sekolah dengan panduan peta" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Kebersamaan</h3>
+                        <p class="text-gray-600 mb-4">Di DKA, kebersamaan adalah saling menghargai, mendukung, dan bekerja sama untuk mencapai tujuan bersama serta mempererat persaudaraan antaranggota.</p>
+                        <div class="flex justify-between items-center text-sm text-gray-500">
+                            <span><i class="far fa-calendar mr-1"></i></span>
+                            <span><i class="far fa-clock mr-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-indigo-600 mb-4">Galeri Kegiatan</h2>
+                <div class="w-20 h-1 bg-indigo-400 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="TES.jpg" alt="Upacara pembukaan perkemahan dengan bendera pramuka berkibar" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="hitam_hitam.jpg" alt="Siswa sedang belajar membuat simpul tali di bawah panduan kakak pembina" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="pta_2.jpeg" alt="Malam api unggun dengan lingkaran siswa menyanyikan lagu pramuka" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="menari.jpeg" alt="Kelompok pramuka sedang melakukan baris-berbaris di lapangan sekolah" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="penempuhan_skk.jpg" alt="Penyerahan penghargaan kepada siswa berprestasi dalam kegiatan pramuka" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="REPLING_2.jpeg" alt="Kegiatan bakti sosial membersihkan lingkungan sekitar sekolah" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="materi.jpeg" alt="Latihan sandi morse menggunakan peluit dan lampu di malam hari" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="PTA_18.jpeg" alt="Foto bersama setelah kegiatan dengan seragam pramuka lengkap" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendaftaran Section -->
+    <section id="daftar" class="py-16 bg-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-indigo-600 text-white p-8 flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold mb-4">Bergabung dengan Dewan Kerja Ambalan</h2>
+                        <p class="mb-6">Isi formulir pendaftaran ini untuk menjadi bagian dari komunitas kami. Tim kami akan menghubungi Anda untuk informasi lebih lanjut.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="bg-indigo-500 p-2 rounded-full mr-3">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                                <span>Pengembangan karakter dan kepemimpinan</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-indigo-500 p-2 rounded-full mr-3">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                                <span>Aktivitas menarik setiap bulan</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-indigo-500 p-2 rounded-full mr-3">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                                <span>Komunitas yang mendukung</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-8">
+                        <form>
+                            <div class="mb-4">
+                                <label for="nama" class="block text-gray-700 mb-2">Nama Lengkap</label>
+                                <input type="text" id="nama" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="kelas" class="block text-gray-700 mb-2">Kelas</label>
+                                <input type="text" id="kelas" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Email/Nomor HP</label>
+                                <input type="text" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="alasan" class="block text-gray-700 mb-2">Alasan Bergabung</label>
+                                <textarea id="alasan" rows="3" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Kirim Pendaftaran</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Sosial Section -->
+    <section id="kontak" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-indigo-300 mb-4">Temui Kami di Media Sosial</h2>
+                <div class="w-20 h-1 bg-indigo-500 mx-auto"></div>
+                <p class="text-gray-300 mt-4 max-w-2xl mx-auto">Ikuti kami di berbagai platform untuk update kegiatan terbaru dan informasi penting</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-6 md:gap-12 mb-12">
+                <a href="#" class="flex flex-col items-center social-icon group">
+                    <div class="bg-indigo-600 p-4 rounded-full mb-2 group-hover:bg-indigo-500 transition">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </div>
+                    <span>Instagram</span>
+                    <span class="https://www.instagram.com/dkasmkn1singgahan.wks?igsh=bHVibGg1bGxlajY2">@
+dkasmkn1singgahan.wks</span>
+                </a>
+                
+                <a href="#" class="flex flex-col items-center social-icon group">
+                    <div class="bg-blue-600 p-4 rounded-full mb-2 group-hover:bg-blue-500 transition">
+                        <i class="fab fa-facebook-f text-2xl"></i>
+                    </div>
+                    <span>Facebook</span>
+                    <span class="text-sm text-gray-400 group-hover:text-blue-300 transition">DKA Sekolah</span>
+                </a>
+                
+                <a href="https://chat.whatsapp.com/BchtnmHCyWv50gJ1H656Y7?mode=ac_t" class="flex flex-col items-center social-icon group">
+                    <div class="bg-green-600 p-4 rounded-full mb-2 group-hover:bg-green-500 transition">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                    </div>
+                    <span>WhatsApp Group</span>
+                    <span class="https://chat.whatsapp.com/BchtnmHCyWv50gJ1H656Y7?mode=ac_t">Join Grup</span>
+                </a>
+                
+                <a href="#" class="flex flex-col items-center social-icon group">
+                    <div class="bg
